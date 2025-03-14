@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MonkeyEmporium</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<div class="container mt-4">
+    <h1 class = "text-center">Welcome to the Monkey Emporium</h1>
+    <hr>
+    <form action="/place order" method="post" class="row g-3">
+        <div class = "col-md-6">
+            <label for="name" class="form-label">Name</label>
+            <input type="text" name = "name" id="name" class = "form-control" placeholder="Enter your name here" required>
+        </div>
+        <div class = "col-md-6">
+            <label for="email" class="form-label">Email Address</label>
+            <input type="email" name = "email" id="email" class = "form-control" placeholder="Enter your email here: name@example.com" required>
+        </div>
+        <div class = "col-md-6">
+            <label for="password" class="form-label">Create Your Password (8-12 Characters)</label>
+            <input type="password" name = "password" id="password" class = "form-control" minlength="8" maxlength="12" required>
+        </div>
+        <div class = "col-md-12">
+            <label for="comments" class="form-label">Leave your Comments Here (I will ignore them mwhahaha)</label>
+            <textarea class = "form-control" name="comments" id="comments" rows="3"></textarea>
+        </div>
+
+        <h2>Product Selection</h2>
+        <hr>
+        <div class = "col-md-6">
+            <h4>Product 1: Chimp</h4>
+            <label class="form-label"> Select Weight:</label>
+            <select class="form-select" name="monkeyweight">
+                <option value="500lb" selected>500lb (Only one in stock)</option>
+                <option value="140lb" selected>140lb</option>
+                <option value="80lb" selected>80lb</option>
+            </select>
+
+            <label class="form-label">Choose Gender</label>
+            <div class="form-check">
+                <input class = "form-check-input" type="radio" name="Monkey Gender" value="Female" checked>
+                <label class="form-check-label">Female</label>
+            </div>
+            <div class="form-check">
+                <input class = "form-check-input" type="radio" name="Monkey Gender" value="Male" checked>
+                <label class="form-check-label">Male</label>
+            </div>
+
+            <label class="form-label">Pick Superpowers:</label>
+            <div class="form-check">
+                <input class = "form-check-input" type="checkbox" name="Superpowers" value="Power to Explode">
+                <label class="form-check-label">Power to Explode</label>
+            </div>
+            <div class="form-check">
+                <input class = "form-check-input" type="checkbox" name="Superpowers" value="Power to Reheat Soup with Mind">
+                <label class="form-check-label">Power to Reheat Soup with Mind</label>
+            </div>
+            <div class="form-check">
+                <input class = "form-check-input" type="checkbox" name="Superpowers" value="Ugliness">
+                <label class="form-check-label">Ugliness</label>
+            </div>
+
+        </div>
+
+        <div class = "col-md-6">
+            <h4>Product 2: Gorilla (Rilla for Short)</h4>
+            <label class="form-label"> Select Weight:</label>
+            <select class="form-select" name="monkeyweight">
+                <option value="500lb" selected>500lb </option>
+                <option value="340lb" selected>340lb</option>
+                <option value="10lb" selected>10lb (Small baby gorilla)</option>
+            </select>
+            <label class="form-label">Choose Gender</label>
+            <div class="form-check">
+                <input class = "form-check-input" type="radio" name="Monkey Gender" value="Female" checked>
+                <label class="form-check-label">Female</label>
+            </div>
+            <div class="form-check">
+                <input class = "form-check-input" type="radio" name="Monkey Gender" value="Male" checked>
+                <label class="form-check-label">Male</label>
+            </div>
+
+            <label class="form-label">Pick Superpowers:</label>
+            <div class="form-check">
+                <input class = "form-check-input" type="checkbox" name="Superpowers" value="Bananavision">
+                <label class="form-check-label">Power of Bananavision (Can see bananas through walls)</label>
+            </div>
+            <div class="form-check">
+                <input class = "form-check-input" type="checkbox" name="Superpowers" value="Power to pass out on demand">
+                <label class="form-check-label">Power to pass out on demand</label>
+            </div>
+            <div class="form-check">
+                <input class = "form-check-input" type="checkbox" name="Superpowers" value="Power to make anyone spill the drink they're carrying">
+                <label class="form-check-label">Power to make anyone spill the drink they're carrying</label>
+            </div>
+        </div>
+        <div class="col-12 text-center mt-3">
+            <input type="submit" class="btn btn-primary" value="Place Order">
+        </div>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
